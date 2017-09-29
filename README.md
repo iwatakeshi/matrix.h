@@ -29,21 +29,31 @@ int main() {
   // Allocate A and B
   int** A = mallocm(n, n);
   int** B = mallocm(n, n);
+  
   // Fill A with zeros
   zerom(A, n, n);
+  
   printf("A\n");
+  
   A[1][1] = 2;
+  
   // Print A
   printm(A, n, n);
+  
   // Copy A to B
   copym(A, B, n, n);
+  
   printf("B\n");
+  
   B[0][0] = 1;
+  
   // Print B
   printm(B, n, n);
+  
   // Free A and B
   freem(A, n);
   freem(B, n);
+  
   return 0;
 }
 ```
