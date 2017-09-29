@@ -9,7 +9,7 @@ void printm(int** a, unsigned int n, unsigned int m);
 /* Fills an n x m matrix with zeros. */
 void zerom(int** a, unsigned int n, unsigned int m);
 
-/* Copies an n x m matrix A to B.*/
+/* Copies an n x m matrix A to B. */
 void copym(int** a, int** b, unsigned int n, unsigned int m);
 
 /* Allocates a memory for an n x m matrix. */
