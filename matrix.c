@@ -25,7 +25,7 @@ void zerom(int** a, unsigned int n, unsigned int m) {
   }
 }
 
-void randm(int **a, int n, int m, int h) {
+void randm(int** a, int n, int m, int h) {
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       a[i][j] = rand() % h;
