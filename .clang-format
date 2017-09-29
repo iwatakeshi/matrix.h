@@ -1,0 +1,7 @@
+BasedOnStyle: Webkit
+UseTab: false
+IndentWidth: 2
+AllowShortIfStatementsOnASingleLine: true
+IndentCaseLabels: false
+BreakBeforeBraces: Attach
+ColumnLimit: 0
