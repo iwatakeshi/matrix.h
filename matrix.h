@@ -4,7 +4,6 @@
 */
 #ifndef MATRIX_H
 #define MATRIX_H
-#include <stdbool.h>
 /* Matrix helper functions */
 void printm(int** matrix, unsigned int n, unsigned int m);
 void zerom(int** matrix, unsigned int n, unsigned int m);
