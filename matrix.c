@@ -43,8 +43,7 @@ void copym(int** a, int** b, unsigned int n, unsigned int m) {
 
 void * mallocm(unsigned int n, unsigned int m) {
   int ** a = (int**)malloc(m * sizeof(int*));
-  int i = 0;
-  for (i = 0; i < m; i++) {
+  for (int i = 0; i < m; i++) {
     a[i] = malloc(n * sizeof(int));
   }
   return (void *)a;
