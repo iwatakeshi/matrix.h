@@ -10,7 +10,7 @@ void printm(int** a, unsigned int n, unsigned int m);
 void zerom(int** a, unsigned int n, unsigned int m);
 
 /* Fills an n x m matrix with random numbers. */
-void randm(int**, unsigned int n, unsigned int m, unsigned int h);
+void randm(int** a, unsigned int n, unsigned int m, unsigned int h);
 
 /* Copies an n x m matrix A to B. */
 void copym(int** a, int** b, unsigned int n, unsigned int m);
