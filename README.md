@@ -26,6 +26,8 @@ void freem(int** a, unsigned int n);
 ```
 ## Usage
 
+### main.c
+
 ```c
 #include "matrix.h"
 #include <stdio.h>
@@ -62,4 +64,11 @@ int main() {
   
   return 0;
 }
+```
+### Compiling
+
+You will need to make sure that `matrix.h` and `matrix.c` are in the same directory as the program. Then you will need to compile `matrix.c` as follows:
+
+```bash
+gcc main.c matrix.c
 ```
