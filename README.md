@@ -15,7 +15,10 @@ void randm(int** a, unsigned int n, unsigned int m, unsigned int h);
 /* Copies an n x m matrix A to B. */
 void copym(int** a, int** b, unsigned int n, unsigned int m);
 
-/* Allocates a memory for an n x m matrix. */
+/* Allocates memory for an n x m matrix. */
+void * mallocm(unsigned int n, unsigned int m);
+
+/* Allocates memory for an n x m matrix and fills it with zeros. */
 void * mallocm(unsigned int n, unsigned int m);
 
 /* Frees the allocated memory for a matrix. */

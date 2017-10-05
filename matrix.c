@@ -41,12 +41,21 @@ void copym(int** a, int** b, unsigned int n, unsigned int m) {
   }
 }
 
-void * mallocm(unsigned int n, unsigned int m) {
-  int ** a = (int**)malloc(m * sizeof(int*));
+void* callocm(unsigned int n, unsigned int m) {
+  int** a = (int**)calloc(n, sizeof(int));
+  for (int i = 0; i < m; i++) {
+    a[i] = malloc(n * sizeof(int));
+    a[i] = 0;
+  }
+  return (void*)a;
+}
+
+void* mallocm(unsigned int n, unsigned int m) {
+  int** a = (int**)malloc(m * sizeof(int*));
   for (int i = 0; i < m; i++) {
     a[i] = malloc(n * sizeof(int));
   }
-  return (void *)a;
+  return (void*)a;
 }
 
 void freem(int** a, unsigned int n) {
