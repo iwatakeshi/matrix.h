@@ -42,10 +42,9 @@ void copym(int** a, int** b, unsigned int n, unsigned int m) {
 }
 
 void* callocm(unsigned int n, unsigned int m) {
-  int** a = (int**)calloc(n, sizeof(int));
+  int** a = (int**)calloc(n, sizeof(int*));
   for (int i = 0; i < m; i++) {
-    a[i] = malloc(n * sizeof(int));
-    a[i] = 0;
+    a[i] = calloc(m, sizeof(int));
   }
   return (void*)a;
 }
